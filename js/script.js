@@ -79,30 +79,17 @@ document.getElementById("justify").addEventListener("click", function () {
 
 // Upercase and Lowercase
 let isUpercase = false;
-document.getElementById("A").addEventListener("click", function () {
-  textElement.style.textTransform = "uppercase";
-});
-document.getElementById("a").addEventListener("click", function () {
-  textElement.style.textTransform = "lowercase";
+document.getElementById("aA").addEventListener("click", function () {
+  if(isUpercase){
+    textElement.style.textTransform = "lowercase";
+  }else{
+    textElement.style.textTransform = "uppercase";
+  }
+  isUpercase = !isUpercase;
 });
 
 document.getElementById("font").addEventListener("keyup", function (e) {
   let fontString = e.target.value;
   font = parseInt(fontString);
   textElement.style.fontSize = font + "px";
-})
-
-// const textElement = document.getElementById("textArea");
-// const changeButton = document.getElementById("bold");
-
-// let isBold = false;
-
-// changeButton.addEventListener("click", () => {
-//   if (isBold) {
-//     textElement.style.fontWeight = "normal";
-//   } else {
-//     textElement.style.fontWeight = "bold";
-//   }
-
-//   isBold = !isBold;
-// });
+});
