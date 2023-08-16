@@ -44,34 +44,34 @@ document.getElementById("left").addEventListener("click", function () {
 // text Center section
 let isCenter = false;
 document.getElementById("center").addEventListener("click", function () {
-  if(isCenter){
+  if (isCenter) {
     textElement.style.textAlign = "left";
   }
-  else{
+  else {
     textElement.style.textAlign = "center";
   }
   isCenter = !isCenter;
 });
 
-
 // text Right section
 let isRight = false;
 document.getElementById("right").addEventListener("click", function () {
-  if(isRight){
+  if (isRight) {
     textElement.style.textAlign = "left";
   }
-  else{
+  else {
     textElement.style.textAlign = "right";
   }
   isRight = !isRight;
 });
+
 // text Justify section
 let isJustify = false;
 document.getElementById("justify").addEventListener("click", function () {
-  if(isJustify){
+  if (isJustify) {
     textElement.style.textAlign = "left";
   }
-  else{
+  else {
     textElement.style.textAlign = "Justify";
   }
   isJustify = !isJustify;
@@ -80,9 +80,9 @@ document.getElementById("justify").addEventListener("click", function () {
 // Upercase and Lowercase
 let isUpercase = false;
 document.getElementById("aA").addEventListener("click", function () {
-  if(isUpercase){
+  if (isUpercase) {
     textElement.style.textTransform = "lowercase";
-  }else{
+  } else {
     textElement.style.textTransform = "uppercase";
   }
   isUpercase = !isUpercase;
