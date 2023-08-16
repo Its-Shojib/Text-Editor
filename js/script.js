@@ -88,8 +88,15 @@ document.getElementById("aA").addEventListener("click", function () {
   isUpercase = !isUpercase;
 });
 
+// Font Size Change Section
 document.getElementById("font").addEventListener("keyup", function (e) {
   let fontString = e.target.value;
   font = parseInt(fontString);
   textElement.style.fontSize = font + "px";
+});
+
+// Color Section
+document.getElementById("color").addEventListener("input", function (e) {
+  let newColor = e.target.value;
+  textElement.style.color = newColor;
 });
