@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <script src="./js/script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-cyan-800">
+    <section class="max-w-screen-xl min-h-screen mx-auto pt-10 px-8 lg:px-16 bg-neutral-600">
+        <div class=" text-center h-7/1">
+            <h1 class="text-3xl text-white font-bold ">My Text Editor 📝</h1>
+            <div class="w-7/12 flex mx-auto bg-slate-200 mt-5 p-3">
+                <div class="space-x-3 flex-1">
+                    <i id="bold" class="fa-solid fa-bold cursor-pointer"></i>
+                    <i id="italic" class="fa-solid fa-italic cursor-pointer"></i>
+                    <i id="underLine" class="fa-solid fa-underline cursor-pointer"></i>
+                </div>
+                <div class="space-x-3 flex-1">
+                    <i id="left" class="fa-solid fa-align-left cursor-pointer"></i>
+                    <i id="center" class="fa-solid fa-align-center cursor-pointer"></i>
+                    <i id="right" class="fa-solid fa-align-right cursor-pointer"></i>
+                    <i id="justify" class="fa-solid fa-align-justify cursor-pointer"></i>
+                </div>
+                <div class="space-x-3 flex-1">
+                    <input type="number" name="" value="16" id="font" class="inline w-10 pl-1">
+                    <i id="A" class="fa-solid fa-font cursor-pointer"></i>
+                    <span id="a" class="cursor-pointer">a</span>
+                </div>
+            </div>
+
+            <div class="w-7/12 mx-auto bg-white">
+                <textarea name="" id="textArea" cols="85"
+                    class="p-3 outline-none border-8 border-gray-700 w-full h-[calc(100vh-200px)]"></textarea>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
